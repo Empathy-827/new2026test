@@ -2,7 +2,10 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/videos", "destination": "/videos.html" },
+    { "source": "/videos/", "destination": "/videos.html" },
     { "source": "/gallery", "destination": "/gallery.html" },
-    { "source": "/about", "destination": "/about.html" }
+    { "source": "/gallery/", "destination": "/gallery.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/about/", "destination": "/about.html" }
   ]
 }
