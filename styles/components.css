@@ -1,4 +1,4 @@
-﻿.btn {
+.btn {
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 0.56rem 1rem;
@@ -70,13 +70,13 @@
   background: var(--line);
 }
 .cursor-ring {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   border: 1px solid var(--line-soft);
   border-radius: 50%;
 }
 .cursor-hover .cursor-ring {
-  transform: translate(-50%, -50%) scale(1.6) !important;
+  transform: translate(-50%, -50%) scale(2.1) !important;
   border-color: var(--accent);
 }
 .fx-particles {
@@ -116,3 +116,4 @@
   .cursor-dot,
   .cursor-ring { display: none; }
 }
+

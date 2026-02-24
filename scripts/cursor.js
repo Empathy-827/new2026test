@@ -1,4 +1,4 @@
-﻿export function initCursor() {
+export function initCursor() {
   const touch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
   if (touch) return;
 
@@ -20,8 +20,8 @@
   });
 
   const loop = () => {
-    rx += (mx - rx) * 0.16;
-    ry += (my - ry) * 0.16;
+    rx += (mx - rx) * 0.24;
+    ry += (my - ry) * 0.24;
     ring.style.transform = `translate(${rx}px, ${ry}px)`;
     requestAnimationFrame(loop);
   };
