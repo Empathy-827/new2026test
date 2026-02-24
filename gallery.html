@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Vision | 图片</title>
+  <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/theme.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+  <link rel="stylesheet" href="/styles/animations.css" />
+</head>
+<body data-page="gallery">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="/">NEO//VISION</a>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <a data-nav="home" href="/" data-i18n="nav_home">首页</a>
+      <a data-nav="videos" href="/videos" data-i18n="nav_videos">视频</a>
+      <a data-nav="gallery" href="/gallery" data-i18n="nav_gallery">图片</a>
+      <a data-nav="about" href="/about" data-i18n="nav_about">关于</a>
+    </nav>
+    <button id="lang-toggle" class="btn btn-ghost" type="button">EN</button>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <p class="eyebrow" data-i18n="gallery_eyebrow">静态视觉</p>
+      <h1 data-i18n="gallery_title">图片画廊</h1>
+      <p class="hero-copy" data-i18n="gallery_copy">按分类筛选并点击查看大图。</p>
+      <div class="filters" id="gallery-filters">
+        <button class="btn btn-filter is-active" type="button" data-filter="all" data-i18n="filter_all">全部</button>
+        <button class="btn btn-filter" type="button" data-filter="concept" data-i18n="filter_concept">概念</button>
+        <button class="btn btn-filter" type="button" data-filter="poster" data-i18n="filter_poster">海报</button>
+        <button class="btn btn-filter" type="button" data-filter="still" data-i18n="filter_still">剧照</button>
+      </div>
+    </section>
+    <section class="section reveal">
+      <div id="gallery-grid" class="masonry"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small data-i18n="footer_text">© 2026 Neo Vision. All rights reserved.</small>
+  </footer>
+
+  <script type="module" src="/scripts/app.js"></script>
+</body>
+</html>
