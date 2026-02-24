@@ -1,4 +1,8 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/videos", "destination": "/videos.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/about", "destination": "/about.html" }
+  ]
 }
