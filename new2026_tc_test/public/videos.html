@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Vision | 视频</title>
+  <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/theme.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+  <link rel="stylesheet" href="/styles/animations.css" />
+</head>
+<body data-page="videos">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="/index.html">NEO//VISION</a>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <a data-nav="home" href="/index.html" data-i18n="nav_home">首页</a>
+      <a data-nav="videos" href="/videos.html" data-i18n="nav_videos">视频</a>
+      <a data-nav="gallery" href="/gallery.html" data-i18n="nav_gallery">图片</a>
+      <a data-nav="about" href="/about.html" data-i18n="nav_about">关于</a>
+    </nav>
+    <button id="lang-toggle" class="btn btn-ghost" type="button">EN</button>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <p class="eyebrow" data-i18n="videos_eyebrow">动态影像</p>
+      <h1 data-i18n="videos_title">视频作品库</h1>
+      <p class="hero-copy" data-i18n="videos_copy">点击卡片可在弹窗播放器中观看视频。</p>
+    </section>
+    <section class="section reveal">
+      <div id="video-grid" class="card-grid card-grid-video"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small data-i18n="footer_text">© 2026 Neo Vision. All rights reserved.</small>
+  </footer>
+
+  <script type="module" src="/scripts/app.js"></script>
+</body>
+</html>
+

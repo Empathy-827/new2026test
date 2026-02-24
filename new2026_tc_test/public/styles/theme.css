@@ -1,0 +1,31 @@
+﻿:root {
+  --bg-0: #050b14;
+  --bg-1: #0c1728;
+  --surface: rgba(9, 22, 39, 0.62);
+  --line: #29ecff;
+  --line-soft: rgba(41, 236, 255, 0.3);
+  --text: #dff2ff;
+  --muted: #8eb0c8;
+  --accent: #ff6f9b;
+  --glow: 0 0 22px rgba(41, 236, 255, 0.42);
+  --radius: 14px;
+  --maxw: 1160px;
+}
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(41, 236, 255, 0.12), transparent 35%),
+    radial-gradient(circle at 86% 4%, rgba(255, 111, 155, 0.1), transparent 36%),
+    linear-gradient(135deg, var(--bg-0), var(--bg-1));
+  color: var(--text);
+}
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(41, 236, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(41, 236, 255, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at 50% 38%, black 34%, transparent 88%);
+}

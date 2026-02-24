@@ -1,0 +1,14 @@
+{
+  "name": "new2026-tc-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tencent Cloud Node.js deployment version of the portfolio site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
